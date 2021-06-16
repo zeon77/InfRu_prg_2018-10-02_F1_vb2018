@@ -9,7 +9,15 @@ namespace vb2018
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            List<Stadion> stadionok = new List<Stadion>();
+            foreach (var sor in File.ReadAllLines("vb2018.txt").Skip(1))
+            {
+                try
+                {
+                    stadionok.Add(new Stadion(sor));
+                }
+                catch { }
+            }
         }
     }
 }

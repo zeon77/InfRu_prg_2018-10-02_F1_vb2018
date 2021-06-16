@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace vb2018
 {
@@ -15,10 +12,10 @@ namespace vb2018
         public Stadion(string sor)
         {
             string[] tmp = sor.Split(';');
-            this.Város = tmp[0];
-            this.Név = tmp[1];
-            this.AltNév = tmp[2];
-            this.Férőhely = int.Parse(tmp[3]);
+            Város = tmp[0];
+            Név = tmp[1];
+            AltNév = tmp[2];
+            Férőhely = int.Parse(tmp[3]);
         }
     }
 }
