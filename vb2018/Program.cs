@@ -22,6 +22,16 @@ namespace vb2018
 
             //3.
             Console.WriteLine("3. feladat: Stadionok száma: {0}", stadionok.Count);
+
+            //4.
+            int minFérőhely = stadionok.Min(x => x.Férőhely);
+            var minStadion = stadionok.Single(x => x.Férőhely == minFérőhely);
+            Console.WriteLine("4. feladat: A legkevesebb férőhely:");
+            Console.WriteLine("\t Város: {0}", minStadion.Város);
+            Console.WriteLine("\t Stadion neve: {0}", minStadion.Név);
+            Console.WriteLine("\t Férőhely: {0}", minStadion.Férőhely);
+
+
         }
     }
 }
