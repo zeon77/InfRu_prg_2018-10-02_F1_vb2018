@@ -35,6 +35,9 @@ namespace vb2018
             Console.WriteLine($"5. feladat: Átlagos férőhelyszám: " +
                 $"{stadionok.Average(x => x.Férőhely):0.0}");
 
+            //6.
+            Console.WriteLine($"6. feladat: Két néven is ismert stadionok száma: " +
+                $"{stadionok.Where(x => x.AltNév != "n.a.").Count()}");
         }
     }
 }
