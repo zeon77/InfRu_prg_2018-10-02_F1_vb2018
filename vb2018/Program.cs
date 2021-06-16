@@ -31,6 +31,9 @@ namespace vb2018
             Console.WriteLine("\t Stadion neve: {0}", minStadion.Név);
             Console.WriteLine("\t Férőhely: {0}", minStadion.Férőhely);
 
+            //5.
+            Console.WriteLine($"5. feladat: Átlagos férőhelyszám: " +
+                $"{stadionok.Average(x => x.Férőhely):0.0}");
 
         }
     }
