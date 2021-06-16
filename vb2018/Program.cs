@@ -38,6 +38,20 @@ namespace vb2018
             //6.
             Console.WriteLine($"6. feladat: Két néven is ismert stadionok száma: " +
                 $"{stadionok.Where(x => x.AltNév != "n.a.").Count()}");
+
+            //7.
+            Console.Write("7. feladat: Kérem a város nevét: ");
+            string Város = Console.ReadLine();
+            while (Város.Length < 3)
+            {
+                Console.Write("7. feladat: Kérem a város nevét (min. 3 kar.): ");
+                Város = Console.ReadLine();
+            }
+
+            //8.
+            Console.WriteLine($"8. feladat: A megadott város " +
+                $"{(stadionok.Where(x => x.Város.ToLower().Contains(Város.ToLower())).Count() > 0 ? "" : "nem ")}" +
+                $"VB helyszín");
         }
     }
 }
