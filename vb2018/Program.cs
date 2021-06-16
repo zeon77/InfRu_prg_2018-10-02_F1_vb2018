@@ -52,6 +52,9 @@ namespace vb2018
             Console.WriteLine($"8. feladat: A megadott város " +
                 $"{(stadionok.Where(x => x.Város.ToLower().Contains(Város.ToLower())).Count() > 0 ? "" : "nem ")}" +
                 $"VB helyszín");
+
+            //9. Dictinct városok
+            Console.WriteLine("9. feladat: {0} különböző városban voltak mérkőzések.", stadionok.GroupBy(x => x.Város).Count());
         }
     }
 }
