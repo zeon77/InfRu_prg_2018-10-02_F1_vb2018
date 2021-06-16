@@ -9,6 +9,7 @@ namespace vb2018
     {
         static void Main(string[] args)
         {
+            //2.
             List<Stadion> stadionok = new List<Stadion>();
             foreach (var sor in File.ReadAllLines("vb2018.txt").Skip(1))
             {
@@ -18,6 +19,9 @@ namespace vb2018
                 }
                 catch { }
             }
+
+            //3.
+            Console.WriteLine("3. feladat: Stadionok száma: {0}", stadionok.Count);
         }
     }
 }
